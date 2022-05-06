@@ -11,7 +11,6 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id)
     else
       @books = Book.all
-      flash[:notice] = 'Titile or Body can' "'" 't be blank'
       render :index
     end
   end

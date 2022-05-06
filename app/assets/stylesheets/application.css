@@ -13,3 +13,105 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,p {
+  color: #333;
+  font-family: verdana,arial,helvetica,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0px;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+table {
+  width: 780px;
+  border-collapse: separate;
+  border-spacing: 2px;
+  table-layout: fixed;
+}
+
+.col1 {
+  width: 150px
+}
+
+.col2 {
+  width: 320px;
+}
+
+.col3 {
+  width: 40px;
+}
+
+.col4 {
+  width: 35px;
+}
+
+.col5 {
+  width: 55px;
+}
+
+th {
+  padding-bottom: 5px;
+  text-align: center;
+  vertical-align: inherit;
+}
+
+td {
+  padding: 0px 5px 7px 5px;
+  word-wrap: break-word;
+}
+
+.link-btn {
+  color: #333;
+  line-height: 18px;
+}
+
+.link-btn:visited {
+  color: grey;
+}
+
+.link-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:750px){
+  body,table {
+    width: 100%;
+  }
+  
+  .col1 {
+    width: 20%
+  }
+  
+  .col2 {
+    width: 30%;
+  }
+  
+  .col3,.col4,.col5{
+   width: 8%; 
+  }
+}

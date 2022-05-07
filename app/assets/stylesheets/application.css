@@ -103,23 +103,23 @@ td {
 }
 
 .alert_message {
-  width: 600px;
+  width: 500px;
   position: relative;
   margin: 2em 0px;
-  padding: 50px 85px;
+  padding: 60px 85px 40px 85px;
   border: 2px solid red;
-  background-color: #edece8;
+  background-color: #f9f7f2;
 }
 
 #alert {
-  width: 597px;
+  width: 497px;
   position: absolute;
   top: 0;
   left: 0;
   line-height: 30px;
   padding: 0 15px;
   color: #fff;
-  background-color: red;
+  background-color: #cc0000;
   font-weight: bold;
 }
 

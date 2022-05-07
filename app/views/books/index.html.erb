@@ -31,7 +31,7 @@
           <%= link_to 'Edit', edit_book_path(book.id), class: "link-btn" %>
         </td>
         <td>
-          <%= link_to 'Destroy', destroy_book_path(book.id), method: :delete, "data-confirm" => "Are you sure?", class: "link-btn" %>
+          <%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm" => "Are you sure?", class: "link-btn" %>
         </td>
       </tr>
     <% end %>

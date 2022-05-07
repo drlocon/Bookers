@@ -127,21 +127,3 @@ li{
   margin: 0;
   padding: 0
 }
-
-@media screen and (max-width:750px){
-  body,table {
-    width: 100%;
-  }
-
-  .col1 {
-    width: 20%
-  }
-
-  .col2 {
-    width: 30%;
-  }
-
-  .col3,.col4,.col5{
-   width: 8%;
-  }
-}

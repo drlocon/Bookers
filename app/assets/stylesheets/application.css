@@ -98,20 +98,50 @@ td {
   margin-bottom: 10px;
 }
 
+#notice {
+  color: green;
+}
+
+.alert_message {
+  width: 600px;
+  position: relative;
+  margin: 2em 0px;
+  padding: 50px 85px;
+  border: 2px solid red;
+  background-color: #edece8;
+}
+
+#alert {
+  width: 597px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #fff;
+  background-color: red;
+  font-weight: bold;
+}
+
+li{
+  margin: 0;
+  padding: 0
+}
+
 @media screen and (max-width:750px){
   body,table {
     width: 100%;
   }
-  
+
   .col1 {
     width: 20%
   }
-  
+
   .col2 {
     width: 30%;
   }
-  
+
   .col3,.col4,.col5{
-   width: 8%; 
+   width: 8%;
   }
 }

@@ -1,7 +1,7 @@
 <% if model.errors.any? %>
     <div class="alert_message">
       <span id= "alert">
-        <%= pluralize(@book.errors.count, "error") %> prohibited this product from being saved:
+        <%= pluralize(model.errors.count, "error") %> prohibited this product from being saved:
       </span>
       <ul>
         <% model.errors.full_messages.each do |message| %>

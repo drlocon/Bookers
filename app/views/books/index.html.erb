@@ -1,12 +1,5 @@
 <h1>Books</h1>
 <table>
-  <colgroup>
-    <col class="col1">
-    <col class="col2">
-    <col class="col3">
-    <col class="col4">
-    <col class="col5">
-  </colgroup>
   <thead>
     <tr>
       <th>Title</th>
@@ -39,16 +32,24 @@
 </table>
 
 <h2>New book</h2>
-<%= form_for(@book) do |f| %>
-  <%= render 'layouts/error_messages', model: f.object %>
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with model: @book, url:books_path, method: :post do |f| %>
+
 
   <div class="field">
-    <h4>Title</h4>
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <h4>Body</h4>
+    <%= f.label :body %><br>
     <%= f.text_area :body %>
   </div>
 
